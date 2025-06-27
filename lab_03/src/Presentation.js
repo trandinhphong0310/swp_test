@@ -1,13 +1,7 @@
-// import logo from './logo.svg';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Presentation({ orchid }) {
-  const navigate = useNavigate();
-
-  const handleDetail = () => {
-    navigate(`/detail/${orchid.id}`);
-  };
-
   return (
     <div className='items_form'>
       <img className="items_img" src={orchid.image} alt={orchid.name} width="250"></img>
@@ -17,7 +11,9 @@ function Presentation({ orchid }) {
       <p><strong>Color: </strong>{orchid.color}</p>
       <p><strong>Category: </strong>{orchid.category}</p>
       {orchid.isSpecial && <p style={{color: "red"}} className="special">Special</p>}
-      <button className="detail_btn" onClick={handleDetail}>Detail</button>
+      <Link style={{ textDecoration: 'none' }} to={`/detail/${orchid.id}`}>
+        <button className="detail_btn">Detail</button>
+      </Link>
     </div>
   );
 }
