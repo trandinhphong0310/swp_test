@@ -1,0 +1,192 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title {
+  margin-bottom: 24px;
+  text-align: center;
+  color: chocolate;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.items_form {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 250px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.items_img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.items_name {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 24px;
+  color:blue;
+}
+
+.items_form .detail_btn {
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
+}
+
+.items_form .close_btn {
+  position: absolute;
+  right: 40px;
+  border: none;
+  background: red;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  bottom: 31px;
+}
+
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* nền mờ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; /* đảm bảo nổi trên các phần khác */
+}
+
+/* Nội dung modal ở giữa */
+.modal_content {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 400px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #282c34;
+  padding: 10px;
+}
+.navbar a {
+  color: #61dafb;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+.navbar a.active {
+  font-weight: bold;
+  color: white;
+}
+
+.contact {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #f5f5fa;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #4a148c;
+  margin-bottom: 1.5rem;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.contact strong {
+  color: #6a1b9a;
+}
+
+.form-contact {
+  max-width: 600px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-contact .MuiTextField-root,
+.form-contact .MuiFormControl-root {
+  width: 100%;
+}
+
+.form-contact .MuiTypography-root {
+  margin-left: 8px;
+  font-size: 0.8rem;
+}
+
+.form-contact button {
+  margin-top: 16px;
+  align-self: flex-end;
+}
