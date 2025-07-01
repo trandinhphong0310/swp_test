@@ -1,179 +1,195 @@
 const orchids = [
   {
     id: '1',
-    name: 'Lan Cẩm Cù',
+    name: 'Hoya Orchid',
     rating: 5,
     isSpecial: true,
     image: '/img/lancamcu.jpg',
     color: 'pink',
     origin: 'Taiwan',
     category: 'Cattleya',
-    clip: "https://www.youtube.com/embed/NrDwHOpzPz4"
+    isNatural: true,
+    clip: "https://www.youtube.com/embed/jE-uqe8dSLU"
   },
   {
     id: '2',
-    name: 'Lan Cattleya',
+    name: 'Cattleya Orchid',
     rating: 4,
     isSpecial: false,
     image: '/img/lancattleya.jpg',
     color: 'white',
     origin: 'Thailand',
     category: 'Cattleya',
-    clip: "https://www.youtube.com/embed/NrDwHOpzPz4"
+    isNatural: true,
+    clip: "https://www.youtube.com/embed/jE-uqe8dSLU"
   },
   {
     id: '3',
-    name: 'Lan Chu Đinh',
+    name: 'Chu Dinh Orchid',
     rating: 4,
     isSpecial: true,
     image: '/img/lanchudinh.jpg',
     color: 'white',
     origin: 'Vietnam',
     category: 'Dendrobium',
-    clip: "https://www.youtube.com/embed/NrDwHOpzPz4"
+    isNatural: false,
+    clip: "https://www.youtube.com/embed/jE-uqe8dSLU"
   },
   {
     id: '4',
-    name: 'Lan Dendro',
+    name: 'Dendro Orchid',
     rating: 4,
     isSpecial: false,
     image: '/img/landendro.jpg',
     color: 'purple',
     origin: 'Thailand',
     category: 'Dendrobium',
-    clip: "https://www.youtube.com/embed/NrDwHOpzPz4"
+    isNatural: false,
+    clip: "https://www.youtube.com/embed/jE-uqe8dSLU"
   },
   {
     id: '5',
-    name: 'Lan Hạc Vỹ',
+    name: 'Hac Vy Orchid',
     rating: 4,
     isSpecial: false,
     image: '/img/lanhacvy.jpg',
     color: 'white',
     origin: 'Vietnam',
     category: 'Dendrobium',
-    clip: "https://www.youtube.com/embed/NrDwHOpzPz4"
+    isNatural: true,
+    clip: "https://www.youtube.com/embed/jE-uqe8dSLU"
   },
   {
     id: '6',
-    name: 'Lan Hoàng Lạp',
+    name: 'Hoang Lap Orchid',
     rating: 4,
     isSpecial: false,
     image: '/img/lanhoanglap.jpg',
     color: 'yellow',
     origin: 'Vietnam',
     category: 'Dendrobium',
-    clip: "https://www.youtube.com/embed/NrDwHOpzPz4"
+    isNatural: true,
+    clip: "https://www.youtube.com/embed/jE-uqe8dSLU"
   },
   {
     id: '7',
-    name: 'Lan Kiều Dẹt',
+    name: 'Flat Kieu Orchid',
     rating: 4,
     isSpecial: false,
     image: '/img/lankieudet.jpg',
     color: 'white',
     origin: 'Thailand',
     category: 'Dendrobium',
-    clip: "https://www.youtube.com/embed/NrDwHOpzPz4"
+    isNatural: true,
+    clip: "https://www.youtube.com/embed/jE-uqe8dSLU"
   },
   {
     id: '8',
-    name: 'Lan Mokara',
+    name: 'Mokara Orchid',
     rating: 4,
     isSpecial: false,
     image: '/img/lanmoraka.jpg',
     color: 'red',
     origin: 'Thailand',
     category: 'Mokara',
-    clip: "https://www.youtube.com/embed/NrDwHOpzPz4"
+    isNatural: true,
+    clip: "https://www.youtube.com/embed/jE-uqe8dSLU"
   },
   {
     id: '9',
-    name: 'Lan Ngọc Điểm',
+    name: 'Ngoc Diem Orchid',
     rating: 4,
     isSpecial: false,
     image: '/img/lanngocdiem.jpg',
     color: 'white',
     origin: 'Vietnam',
     category: 'Rhynchostylis',
-    clip: "https://www.youtube.com/embed/NrDwHOpzPz4"
+    isNatural: false,
+    clip: "https://www.youtube.com/embed/jE-uqe8dSLU"
   },
   {
     id: '10',
-    name: 'Lan Phi Điệp',
+    name: 'Phi Diep Orchid',
     rating: 4,
     isSpecial: false,
     image: '/img/lanphidep.jpg',
     color: 'purple',
     origin: 'Vietnam',
     category: 'Dendrobium',
-    clip: "https://www.youtube.com/embed/NrDwHOpzPz4"
+    isNatural: true,
+    clip: "https://www.youtube.com/embed/jE-uqe8dSLU"
   },
   {
     id: '11',
-    name: 'Lan Tam Bảo Sắc',
+    name: 'Tam Bao Sac Orchid',
     rating: 4,
     isSpecial: false,
     image: '/img/lantambaosac.jpg',
     color: 'multi-color',
     origin: 'Vietnam',
     category: 'Dendrobium',
-    clip: "https://www.youtube.com/embed/NrDwHOpzPz4"
+    isNatural: false,
+    clip: "https://www.youtube.com/embed/jE-uqe8dSLU"
   },
   {
     id: '12',
-    name: 'Lan Trần Mộng',
+    name: 'Tran Mong Orchid',
     rating: 4,
     isSpecial: false,
     image: '/img/lantranmong.jpg',
     color: 'white',
     origin: 'Vietnam',
     category: 'Dendrobium',
-    clip: "https://www.youtube.com/embed/NrDwHOpzPz4"
+    isNatural: true,
+    clip: "https://www.youtube.com/embed/jE-uqe8dSLU"
   },
   {
     id: '13',
-    name: 'Lan Vanda',
+    name: 'Vanda Orchid',
     rating: 4,
     isSpecial: false,
     image: '/img/lanvanda.jpg',
     color: 'blue',
     origin: 'Thailand',
     category: 'Vanda',
-    clip: "https://www.youtube.com/embed/NrDwHOpzPz4"
+    isNatural: true,
+    clip: "https://www.youtube.com/embed/jE-uqe8dSLU"
   },
   {
     id: '14',
-    name: 'Lan Vũ Nữ',
+    name: 'Dancing Lady Orchid',
     rating: 4,
     isSpecial: false,
     image: '/img/lanvunu.jpg',
     color: 'yellow',
     origin: 'Thailand',
     category: 'Oncidium',
-    clip: "https://www.youtube.com/embed/NrDwHOpzPz4"
+    isNatural: false,
+    clip: "https://www.youtube.com/embed/jE-uqe8dSLU"
   },
   {
     id: '15',
-    name: 'Lan Đùi Gà',
+    name: 'Chicken Thigh Orchid',
     rating: 4,
     isSpecial: false,
     image: '/img/landuiga.jpg',
     color: 'white',
     origin: 'Thailand',
     category: 'Cattleya',
-    clip: "https://www.youtube.com/embed/NrDwHOpzPz4"
+    isNatural: true,
+    clip: "https://www.youtube.com/embed/jE-uqe8dSLU"
   },
   {
     id: '16',
-    name: 'Lan Chuỗi Ngọc',
+    name: 'Pearl Chain Orchid',
     rating: 4,
     isSpecial: false,
     image: '/img/lanchuoingoc.jpg',
     color: 'white',
-    origin: 'VietNam',
+    origin: 'Vietnam',
     category: 'Cattleya',
-    clip: "https://www.youtube.com/embed/NrDwHOpzPz4"
+    isNatural: true,
+    clip: "https://www.youtube.com/embed/jE-uqe8dSLU"
   }
 ];
 

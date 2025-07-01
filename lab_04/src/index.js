@@ -5,7 +5,9 @@ import Container from './Container';
 import Contact from './Contact';
 import Detail from './Detail';
 import reportWebVitals from './reportWebVitals';
+import Natural from './Natural';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import About from './About';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,11 +16,15 @@ root.render(
       <nav className='navbar'>
           <Link to="/">Home</Link>
           <Link to="/contact">Contact</Link>
+          <Link to="/about">About</Link>
+          <Link to="/naturals">Naturals</Link>
       </nav>
       <Routes>
         <Route path="/" element={<Container />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/detail/:id" element={<Detail />} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/naturals" element={<Natural/>} />
       </Routes>
     </Router>
   </React.StrictMode>
