@@ -42,7 +42,7 @@ const quizSlice = createSlice({
             state.submitted = true
         },
         resetQuiz: (state) => {
-            state.questions.forEach(q => q.selectedAnswer === null)
+            state.questions.forEach(q => q.selectedAnswer = null)
             state.submitted = false
         }
     }

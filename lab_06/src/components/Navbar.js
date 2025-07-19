@@ -13,6 +13,7 @@ export default function Navbar() {
 
         <Box>
           <Button color="inherit" onClick={() => navigate("/")}>Home</Button>
+          <Button color="inherit" onClick={() => navigate("/login")}>Login</Button>
           <Button color="inherit" onClick={() => navigate("/contact")}>Contact</Button>
           <Button color="inherit" onClick={() => navigate("/about")}>About</Button>
           <Button color="inherit" onClick={() => navigate("/create")}>Create Orchids</Button>

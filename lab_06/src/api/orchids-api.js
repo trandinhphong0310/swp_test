@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = "https://686f528491e85fac42a07aa5.mockapi.io/orchids"
+const baseUrl = "https://687893d963f24f1fdc9e7b89.mockapi.io/api/orchids"
 
 export const getAllOrchids = async () => {
     try {
